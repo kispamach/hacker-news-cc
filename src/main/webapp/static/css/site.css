@@ -10,3 +10,14 @@
     border: 1px solid darkred;
     padding: 3px;
 }
+
+.container-md {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#page-switcher {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
