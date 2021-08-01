@@ -12,6 +12,7 @@
 }
 
 .container-md {
+    max-width: 960px;
     width: 80%;
     margin-right: auto;
     margin-left: auto;
@@ -20,4 +21,8 @@
 #page-switcher {
     margin-top: 10px;
     margin-bottom: 5px;
+}
+
+.footer {
+    text-align: center;
 }

@@ -54,7 +54,8 @@ function loadArticles(url) {
 }
 
 function articleCards(articles) {
-    return `<div class="col-sm-3">
+    if (articles.user != null) {
+        return `<div class="col-sm-4">
             <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
                 <div class="card-header">${articles.title}</div>
                 <div class="card-body">
@@ -63,4 +64,14 @@ function articleCards(articles) {
                 </div>
             </div>
         </div>`
+    } else {
+        return `<div class="col-sm-4">
+                <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">${articles.title}</div>
+                    <div class="card-body">            
+                        <p class="card-text">${articles.time_ago}</p>
+                    </div>
+                </div>
+            </div>`
+    }
 }
