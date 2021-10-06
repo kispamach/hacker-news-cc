@@ -47,10 +47,10 @@ function loadArticles(url) {
         .catch(console.log)
     let urlParts = url.split("?page=")
     let page = parseInt(urlParts[1])
-    // if (url.indexOf("/api/jobs") == -1) {
+
     prevBtn.href = urlParts[0] + "?page=" + ((page > 1) ? page - 1 : page)
     nextBtn.href = urlParts[0] + "?page=" + ((page < 10) ? page + 1 : page)
-    // }
+
 }
 
 function articleCards(articles) {

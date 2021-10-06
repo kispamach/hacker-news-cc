@@ -20,7 +20,6 @@ public class TopNews extends HttpServlet {
         PrintWriter out = response.getWriter();
         String pageParam = request.getParameter("page");
         int page = pageParam != null ? Integer.parseInt(pageParam) : 1;
-        System.out.println(page);
 
         out.print(HttpRequest.getContent("https://api.hnpwa.com/v0/news/" + page +".json"));
     }
